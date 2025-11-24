@@ -1,0 +1,2798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="authOr" content="Eng.Emad">
+    <link rel="stylesheet" href="CssAbdo/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta property="og:Hospital System" content="Hospital System">
+    <meta property="og:Discription" content="This system is Hospital web page">
+    <meta property="og:image" content="photoAbdo/hos.png">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="IZO Hospitals">
+    <title>IZO Hospital</title>
+    <link rel="stylesheet" href="style.css">
+  
+     <link rel="stylesheet" href="./CssAbdo/master.css"> 
+    
+    
+
+</head>
+<!--EL Body -->
+<body>
+
+    <!-- الصفحه الراىسيه-->
+    
+    <div class="containers" id="first-page" style="display: block;">
+        <div class="headers">
+            <h1>Welcome To IZO Hospitals</h1>
+        </div>
+
+        <div class="first-form">
+            <form id="regist-form" action="submit-form" method="post">
+            <div class="form-group3">
+                <label for="new"> New Acount</label>
+                <button type="button"  id="submit-new" name="submit-newpage">Next</button>
+            </div>
+            <div class="form-group3">
+                <label for="old"> Sign In Your a Acount</label>
+                <button type="button"  id="submit-old" name="submit-oldpage" >Next</button>
+            </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    <!--صفحه القديم-->
+    
+    <div class="containers" id="old-page">
+        <div class="headers">
+            <h2>Welcome To IZO Hospitals</h2>
+        </div>
+        
+        <div class="first-form">
+            <form id="regist-form" action="submit-form" method="post">
+                <label for="id-old">User Id</label>
+                <input 
+                    type="number"
+                    id="id-old"
+                    name="id-old3"
+                    minlength="3"
+                    maxlength="15"
+                    placeholder="enter your  id"
+                    required>
+                    <div class="error-message"
+                    id="idError">يجب أن تكون كلمة المرور بين15و3 حرفاً</div>  
+                    <button type="button" name="submit-old"  id="submit-finseold">login</button> 
+            </form>
+        </div>
+    </div>
+
+    <!--صفحه القديم الثانيه-->
+
+
+    <div class="containers" id="old-options-page">
+        <div class="headers">
+            <h2>Welcome To IZO Hospitals</h2>
+            
+        </div>
+        <div class="first-form">
+            <form id="old-options-form" action="submit-form" method="post">
+                <label >
+                    <h3>Are You a Patient ,a doctor or a staff</h3>
+                </label>
+                <button type="button" value="doctor-id" id="submit-doctor-id">Doctor</button>
+                <button type="button" value="patient-id" id="submit-patient-id">Patient</button>
+                <button type="button" value="staff-id" id="submit-staff-id">Staff</button>
+            </form>
+        </div>
+    </div>
+    
+    <!--صفحه الجديد-->
+    
+    <div class="containers" id="new-page">
+        <div class="headers">
+            <h2>Welcome To IZO Hospitals</h2>
+            
+        </div>
+        <div class="first-form">
+            <form id="regist-form" action="submit-form" method="post">
+                <label for="patients">
+                    <h3>Are You a Patient ,a doctor or a staff</h3>
+                </label>
+                <button type="button" value="doctor" id="submit-doctor-page">Doctor</button>
+                <button type="button" value="patient" id="submit-patient-page">Patient</button>
+                <button type="button" value="staff" id="submit-staff-page">Staff</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!--صفحه الدكتور-->
+    
+    <div class="containers" id="doctor-page">
+        <div class="headers">
+            <h3>Welcome Doctor</h3>
+        </div>
+
+        <div class="first-form">
+            <form action="submit-form" method="post"> 
+                <div class="form-group">
+                    <label for="userName">User Name</label>
+                    <input 
+                        type="text" 
+                        id="userName" 
+                        name="userName" 
+                        minlength="3" 
+                        maxlength="30" 
+                        placeholder="Enter your name"
+                        required>
+                        <div class="error-message" id="nameError">يجب أن يكون الاسم بين 3 و 30 حرفاً</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="id-user">User Age</label>
+                    <input 
+                        type="number" 
+                        id="id-user" 
+                        name="idage" 
+                        placeholder="Enter your age"
+                        required>
+                        <div class="error-message" id="idError">يجب أن تكون كلمة المرور بين 6 و 20 حرفاً</div> 
+                </div>
+
+                
+                
+
+                <div class="form-group">
+                    <label for="userEmail">User Email</label>
+                    <input 
+                        type="email" 
+                        id="userEmail" 
+                        name="userEmail" 
+                        placeholder="Enter your Email"            
+                        required>
+                        <div class="error-message" id="emailError">يرجى إدخال بريد إلكتروني صحيح</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="your-phone"> phone number</label>
+                    <input 
+                        type="tel" 
+                        id="your-phone" 
+                        name="phone" 
+                        placeholder="Enter your phone number"   
+                        maxlength="11"         
+                        required  dir="ltr">
+                        <div class="error-message" id="emailError">يرجى إدخال بريد إلكتروني صحيح</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="id-experience">Experience years</label>
+                    <input 
+                        type="number" 
+                        id="id-experience" 
+                        name="id-experience" 
+                        min="1"
+                        max="2"
+                        placeholder="Enter your Experience years"
+                        required>
+                        <div class="error-message" id="idError">يجب ان تكون سنوات الخبره اقل من 100</div> 
+                </div>
+
+                <div class="form-group">
+                    <label for="hospital-numberr">Hospital Id</label>
+                    <select name="Hospital-iddoctor" id="hospital-numberr" required>
+                        <option value="disabled selected" disabled selected>Choose your Hospital Id</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <div class="error-message" id="hospitalError">يرجى اختيار حالتك</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="doctor-Status">Doctor Type </label>
+                    <select id="doctor-status" name="doctor-type" required>
+                        <option value=" disabled selected" disabled  selected>Choose yuor status</option>
+                        <option value="consultative">استشاري</option>
+                        <option value="visitor">زائر</option>
+                        <option value="resident">مقيم</option>
+                        <option value="specialist">اخصائي</option>
+                        
+                    </select>
+                    
+                    <div class="error-message" id="statusError">يرجى اختيار حالتك</div>  
+                </div>
+
+                <div class="form-group">
+                    <label for="userStatus">Department</label>
+                    <select id="doctordepartment" name="doctordepartment" required>
+                        <option value=" disabled selected" disabled  selected>Choose yuor Department</option>
+                        <option value="heart">القلب</option>
+                        <option value="interior"> الباطنه</option>
+                        <option value="children">اطفال</option>
+                        <option value="general surgery">جراحه عامه</option>
+                        <option value="women and obsterics">نساء وتوليد</option>
+                        <option value="bones">عظام</option>
+                        <option value="Brain and nerves">مخ واعصاب</option>
+                        <option value="leather">جلديه</option>
+                        <option value="nose and ear">انف واذن</option>
+                        <option value="teeth">اسنان</option>
+                        <option value="eyes">عيون</option>
+                    </select>
+                    <div class="error-message" id="statusError">يرجى اختيار حالتك</div>  
+                </div>
+
+                <div class="form-group">
+                    <h4>   gender</h4>
+                    <label>Male
+                    <input type="radio" name="gender" value="male">
+                    </label>
+                    <label>Female
+                    <input type="radio" name="gender"value="female">
+                    </label>
+                </div>
+
+                
+
+                
+                
+                <button type="button" name="submit-doctor" id="submit-doc">login</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!--صفحه االمريض-->
+    
+
+    <div class="containers" id="patient-page">
+        <div class="headers">
+            <h3>Welcome Patient</h3>
+        </div>
+
+        <div class="first-form">
+            <form action="submit-form" method="post">
+                <div class="form-group">
+                    <label for="userName">User Name</label>
+                    <input 
+                        type="text" 
+                        id="userName" 
+                        name="userName" 
+                        minlength="3" 
+                        maxlength="30" 
+                        placeholder="Enter your name"
+                        required>
+                        <div class="error-message" id="nameError">يجب أن يكون الاسم بين 3 و 30 حرفاً</div>
+                </div>
+<!--<div class="form-group">
+                    <label for="your-phone"> phone number</label>
+                    <input 
+                        type="tel" 
+                        id="your-phone" 
+                        name="phone" 
+                        placeholder="Enter your phone number"   
+                        minlength="11"
+                        maxlength="11"
+                        dir="ltr"         
+                        required  >
+                        
+                </div>-->
+                
+
+        
+                
+
+                
+            
+                <div class="form-group">
+                    <label for="id-national">National Id</label>
+                    <input 
+                        type="number" 
+                        id="id-national" 
+                        name="nationalid" 
+                        minlength="13" 
+                        maxlength="14" 
+                        placeholder="Enter the national id"
+                        required>
+                        <div class="error-message" id="idError">يجب أن تكون كلمة المرور بين 13و14حرفاً</div> 
+                </div>
+
+                <div class="form-group">
+                    <label for="hospital-number">Hospital Id</label>
+                    <select name="Hospital-id-patient" id="hospital-number" required>
+                        <option value="disabled selected" disabled selected>Choose your Hospital Id</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <div class="error-message" id="statusError-patient">يرجى اختيار حالتك</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="patient-illness">Disease Name</label>
+                    <select name="illness-id-patient" id="patient-illness" required>
+                        <option value="disabled selected" disabled selected>Choose your Hospital Id</option>
+                        <option value="الانفلونزا">الانفلونزا</option>
+                        <option value="ارتفاع ضغط الدم">ارتفاع ضغط الدم</option>
+                        <option value="السكر من النوع الثاني">السكر من النوع الثاني</option>
+                        <option value="التهاب رئوي">التهاب رئوي</option>
+                        <option value="نزله برد">نزله برد</option>
+                        <option value="حصبه">حصبه</option>
+                        <option value="Aفيروس الكبد">Aفيروس الكبد</option>
+                        <option value="انميا">انميا</option>
+                        <option value="مساكل في القلب">مشاكل في القلب</option>
+                        <option value="كسر في الذراع">كسر في الذراع</option>
+                        <option value="التهاب المعدة">التهاب المعدة</option>
+                        <option value="جفاف حاد">جفاف حاد</option>
+                        <option value="الربو">الربو</option>
+                        <option value="قرحه المعدة">قرحه المعدة</option>
+                        <option value="الم مزمن في الظهر">الم مزمن في الظهر</option>
+                        <option value="التهاب الاوزتين">التهاب الاوزتين</option>
+                        <option value="كحه مزمنه">كحه مزمنه</option>
+                        <option value="حساسيه الصدر">حساسيه الصدر</option>
+                        <option value="كوفيد 19">كوفيد19</option>
+                        <option value="قرح جلدية">قرح جلدية</option>
+                        
+                    </select>
+                    <div class="error-message" id="statusError-patient">يرجى اختيار حالتك</div>
+                </div>
+                
+
+                <div class="form-group">
+                    <label for="birthdate">Birth date</label>
+                    <div class="date-group">
+                        <select id="day" name="day" required>
+                            <option value="">اليوم</option>
+                        <!-- سيتم ملء الأيام باستخدام JavaScript -->
+                        </select>
+                    
+                        <select id="month" name="month" required>
+                            <option value="" disabled selected>الشهر</option>
+                            <option value="1">يناير</option>
+                            <option value="2">فبراير</option>
+                            <option value="3">مارس</option>
+                            <option value="4">أبريل</option>
+                            <option value="5">مايو</option>
+                            <option value="6">يونيو</option>
+                            <option value="7">يوليو</option>
+                            <option value="8">أغسطس</option>
+                            <option value="9">سبتمبر</option>
+                            <option value="10">أكتوبر</option>
+                            <option value="11">نوفمبر</option>
+                            <option value="12">ديسمبر</option>
+                        </select>
+                    
+                        <select id="year" name="year" required>
+                            <option value="">السنة</option>
+                        <!-- سيتم ملء السنوات باستخدام JavaScript -->
+                        </select>
+                    </div>
+                </div>
+            
+                
+                <div class="form-group">
+                    <label for="address">User Address</label>
+                    <select name="address" id="address" required>
+                        <option value="">-- اختر محافظة --</option>
+                        <option value="cairo">القاهرة</option>
+                        <option value="alexandria">الإسكندرية</option>
+                        <option value="portsaid">بورسعيد</option>
+                        <option value="suez">السويس</option>
+                        <option value="dumyat">دمياط</option>
+                        <option value="dakahlia">الدقهلية</option>
+                        <option value="sharqia">الشرقية</option>
+                        <option value="qalyubia">القليوبية</option>
+                        <option value="kafr_el_sheikh">كفر الشيخ</option>
+                        <option value="gharbia">الغربية</option>
+                        <option value="monufia">المنوفية</option>
+                        <option value="beheira">البحيرة</option>
+                        <option value="ismailia">الإسماعيلية</option>
+                        <option value="giza">الجيزة</option>
+                        <option value="beni_suef">بني سويف</option>
+                        <option value="fayoum">الفيوم</option>
+                        <option value="minya">المنيا</option>
+                        <option value="asyut">أسيوط</option>
+                        <option value="sohag">سوهاج</option>
+                        <option value="qena">قنا</option>
+                        <option value="luxor">الأقصر</option>
+                        <option value="aswan">أسوان</option>
+                        <option value="red_sea">البحر الأحمر</option>
+                        <option value="new_valley">الوادي الجديد</option>
+                        <option value="matruh">مطروح</option>
+                        <option value="north_sinai">شمال سيناء</option>
+                        <option value="south_sinai">جنوب سيناء</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <h4> gender</h4>
+                    <label>Male
+                    <input type="radio" name="gender" value="male">
+                    </label>
+                    <label>Female
+                    <input type="radio" name="gender"value="female">
+                    </label>
+                </div>
+                <button type="button" name="submit-patient" id="submit-pati">login</button>
+            </form>
+        </div>
+    </div>
+
+    <!--صفحه الاسطف-->
+
+    <div class="containers" id="staff-page">
+        <div class="headers">
+            <h3>Welcome Staff</h3>
+        </div>
+        
+        <div class="first-form">
+            <form action="submit-form" method="post">
+                <div class="form-group">
+                    <label for="userName">User Name</label>
+                    <input 
+                        type="text" 
+                        id="userName" 
+                        name="userName" 
+                        minlength="3" 
+                        maxlength="30" 
+                        placeholder="Enter your name"
+                        required>
+                        <div class="error-message" id="nameError">يجب أن يكون الاسم بين 3 و 30 حرفاً</div>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="your-phone"> phone number</label>
+                    <input 
+                        type="tel" 
+                        id="your-phone" 
+                        name="phone" 
+                        placeholder="Enter your phone number"   
+                        minlength="11"
+                        maxlength="11" 
+                        dir="ltr"        
+                        required  >
+                        <div class="error-message" id="emailError">يرجى إدخال بريد إلكتروني صحيح</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="userEmail">User Email</label>
+                    <input 
+                        type="email" 
+                        id="userEmail" 
+                        name="userEmail" 
+                        placeholder="Enter your Email"            
+                        required>
+                        <div class="error-message" id="emailError">يرجى إدخال بريد إلكتروني صحيح</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="id-user">User Age</label>
+                    <input 
+                        type="number" 
+                        id="id-user" 
+                        name="idage" 
+                        
+                        
+                        placeholder="Enter your age"
+                        required>
+                        <div class="error-message" id="idError">يجب أن تكون كلمة المرور بين 6 و 20 حرفاً</div> 
+                </div>
+
+                
+                <div class="form-group">
+                    <h4> gender</h4>
+                    <label>Male
+                    <input type="radio" name="gender" value="male">
+                    </label>
+                    <label>Female
+                    <input type="radio" name="gender"value="female">
+                    </label>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="hospital-numberr">Hospital Id</label>
+                    <select name="Hospital-id" id="hospital-numberr" required>
+                        <option value="disabled selected" disabled selected>Choose your Hospital Id</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <div class="error-message" id="statusError">يرجى اختيار حالتك</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="hospital-job">Job Title</label>
+                    <select name="Hospital-job" id="hospital-job" required>
+                        <option value="disabled selected" disabled selected>Choose your Job Title</option>
+                        <option value="head of operations">رئيس قسم العمليات</option>
+                        <option value="financial manager">مدير مالي</option>
+                        <option value="secretary">سكرتاريه</option>
+                        <option value="reception">استقبال</option>
+                        <option value="nurse">ممرض</option>
+                        <option value="nursing supervisor">مشرف تمريض</option>
+                        <option value="medical equipment technician">فني اجهزه طبيه</option>
+                        <option value="laboratory technician">فني مختبر</option>
+                    </select>
+                    <div class="error-message" id="statusError">يرجى اختيار حالتك</div>
+                </div>
+                <div>
+                    <button type="button" name="submit-staff" id="submit-staf">login</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!--جزء الدكتور الخاص بعبدو-->
+
+
+
+
+<div id="doctor-abdo-page">
+    <section class="home" id="home">
+        <nav>
+            <a href="#">IZOHospital</a>
+            <ul id="action">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">ME</a></li>
+                <li><a href="#members">Staff</a></li>
+            </ul>
+
+            <button id="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </nav>
+        <div class="content">
+            <div class="container-text">
+                <h4>welcome to</h4>
+                <h1><div style="display: inline;" data-aos="fade-right" data-aos-duration="1000">IZO</div><div style="display: inline;" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100"> Hospital </div></h1>
+                <a href="#members" class="btn" data-aos="fade-right" data-aos-duration="1000">Show Staff</a>
+            </div>
+            <div class="container-image" data-aos="fade-right" data-aos-duration="1000">
+                <img src="./photoAbdo/Doctor.jpg" alt="" class="shape">
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container-image" data-aos="fade-left" data-aos-duration="1000">
+            <img src="./photoAbdo/Doctor.jpg" alt="about image">
+        </div>
+        <div class="container-text">
+            <h1 data-aos="fade-right" data-aos-duration="1000">Details <span>!</span></h1>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>Doctor ID:</span> 555555</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>Name:</span> Abdelhak</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span> Gender:</span> Male</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>Age:</span> 555555</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>Experience Years:</span> 555555</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>Specialization:</span> 555555</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>Doctor Type:</span> 555555</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>Phone:</span> 555555</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>Email:</span> 555555</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>Hospital ID:</span> 555555</h5>
+        </div>
+    </section>
+    <section class="members" id="members">
+        <h1 class="text-center"><div style="display: inline;" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">team -</div> <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">Staff</span></h1>
+        <div class="members-card">
+            <div data-aos="fade-left" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img Abdelrahman"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">DR.James Carter</h2>
+                            <p class="para">Cardiology ❤️
+                            Cardiology is the branch of medicine that deals with the heart and blood vessels.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img Elzoghby"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">DR.Emma Rose</h2>
+                            <p class="para">Neurology 🧠
+                            Neurology focuses on the brain, spinal cord, and nerves.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img ali"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">NR.Liam Parker</h2>
+                            <p class="para">Dermatology 🩹
+                            Dermatology is the study of the skin, hair, and nails</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img Nada"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">DR.Ethan Cole</h2>
+                            <p class="para">Pediatrics 👶
+                            Pediatrics is the medical care of infants, children, and teenagers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img Nour"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">DR.Noah Brooks</h2>
+                            <p class="para">Orthopedics 🦴
+                                Orthopedics deals with the bones, joints, muscles, and ligaments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img Marim"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">DR.Ryan Blake</h2>
+                            <p class="para">Ophthalmology 👁️Ophthalmology is the study of the eyes and vision</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img eid"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">DR.Chloe Grace</h2>
+                            <p class="para">Psychiatry 🧩Psychiatry focuses on mental health and emotional well-being.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img Kirlis"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">RN.Mia Scott</h2>
+                            <p class="para">Oncology 🎗️Oncology is the branch of medicine that deals with cancer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <!--جزء  الممرض الخاص بعبدو-->
+
+<div id=patient-abdo-page>
+    <section class="home" id="home">
+        <nav>
+            <a href="#">IZOHospital</a>
+            <ul id="action">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">ME</a></li>
+                <li><a href="#members">Staff</a></li>
+                <li><a href="#Radiology">Radiology</a></li>
+                <li><a href="#Laboratory">Laboratory</a></li>
+                <li><a href="#treatment">Treatment</a></li>
+            </ul>
+
+            <button id="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </nav>
+        <div class="content">
+            <div class="container-text">
+                <h4>welcome to</h4>
+                <h1><div style="display: inline;" data-aos="fade-right" data-aos-duration="1000">IZO</div><div style="display: inline;" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100"> Hospital </div></h1>
+                <a href="#members" class="btn" data-aos="fade-right" data-aos-duration="1000">Show Staff</a>
+            </div>
+            <div class="container-image" data-aos="fade-right" data-aos-duration="1000">
+                <img src="./photoAbdo/Docs-H.png" alt="" class="shape">
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container-image" data-aos="fade-left" data-aos-duration="1000">
+            <img src="./photoAbdo/nur.jpg" alt="about image">
+        </div>
+        <div class="container-text">
+            <h1 data-aos="fade-right" data-aos-duration="1000">Details <span>!</span></h1>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>Patient ID:</span> 555555</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>National ID:</span> Shahd</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span> Full Name:</span> Female</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>Brith Date:</span> 555555</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>Gender:</span> 555555</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>Address:</span> 555555</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>Phone:</span> 555555</h5>
+        </div>
+    </section>
+    <section class="members" id="members">
+        <h1 class="text-center"><div style="display: inline;" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">team -</div> <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">Staff</span></h1>
+        <div class="members-card">
+            <div data-aos="fade-left" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img Abdelrahman"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">RN.Laila Carter</h2>
+                            <p class="para">Cardiology ❤️
+                            Cardiology is the branch of medicine that deals with the heart and blood vessels.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img Elzoghby"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">MLT.Makron Rose</h2>
+                            <p class="para">Neurology 🧠
+                            Neurology focuses on the brain, spinal cord, and nerves.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img ali"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">PharmD.Kirlis Parker</h2>
+                            <p class="para">Dermatology 🩹
+                            Dermatology is the study of the skin, hair, and nails</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img Nada"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">EMT.Peter Cole</h2>
+                            <p class="para">Pediatrics 👶
+                            Pediatrics is the medical care of infants, children, and teenagers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img Nour"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">RN.Reem Brooks</h2>
+                            <p class="para">Orthopedics 🦴
+                                Orthopedics deals with the bones, joints, muscles, and ligaments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img Marim"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">RN.Nada Blake</h2>
+                            <p class="para">Ophthalmology 👁️Ophthalmology is the study of the eyes and vision</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img eid"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">RN.Chloe Grace</h2>
+                            <p class="para">Psychiatry 🧩Psychiatry focuses on mental health and emotional well-being.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img Kirlis"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">RN.Mia Scott</h2>
+                            <p class="para">Oncology 🎗️Oncology is the branch of medicine that deals with cancer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Laboratory" id="Laboratory">
+        <h1 class="h-Laboratory"><div style="display: inline;" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">Test -</div> <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">result</span></h1>
+        <div class="">
+        <img src="photoAbdo/Laboratory1.jpg" alt="photo for Test results">
+        
+        <img src="photoAbdo/Laboratory2.jpg" alt="photo for Test results">
+
+        <img src="photoAbdo/Laboratory3.jpg" alt="photo for Test results">
+
+        <img src="photoAbdo/Laboratory4.png" alt="photo for Test results">
+
+        <img src="photoAbdo/Laboratory5.jpg" alt="photo for Test results">
+
+        <img src="photoAbdo/Laboratory6.png" alt="photo for Test results">
+        </div>
+    </section>
+    <section class="Radiology" id="Radiology">
+        <h1 class="h-Laboratory"><div style="display: inline;" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">X-ray -</div> <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">result</span></h1>
+        <div class="">
+        <img src="photoAbdo/Laboratory1.jpg" alt="photo for Test results">
+        
+        <img src="photoAbdo/Laboratory2.jpg" alt="photo for Test results">
+
+        <img src="photoAbdo/Laboratory3.jpg" alt="photo for Test results">
+
+        <img src="photoAbdo/Laboratory4.png" alt="photo for Test results">
+
+        <img src="photoAbdo/Laboratory5.jpg" alt="photo for Test results">
+
+        <img src="photoAbdo/Laboratory6.png" alt="photo for Test results">
+        </div>
+    </section>
+    <section class="schedule" id="schedule">
+    <h2 class="text-center">📅 Appointments Schedule</h2>
+    <p class="text-center">Check the weekly availability of doctors and clinics.</p>
+
+    <div class="table-container">
+    <table>
+        <thead>
+        <tr>
+            <th>Day</th>
+            <th>Doctor</th>
+            <th>Specialty</th>
+            <th>Morning Shift</th>
+            <th>Evening Shift</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Saturday</td>
+            <td>Dr. Ahmed Mahmoud</td>
+            <td>Internal Medicine</td>
+            <td>9:00 AM - 1:00 PM</td>
+            <td>4:00 PM - 8:00 PM</td>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td>Dr. Sarah Ali</td>
+            <td>Pediatrics</td>
+            <td>9:00 AM - 1:00 PM</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Dr. Karim Hassan</td>
+            <td>Surgery</td>
+            <td>10:00 AM - 2:00 PM</td>
+            <td>5:00 PM - 9:00 PM</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+</section>
+<section class="treatment" id="treatment">
+    <h2 class="text-center">💊 Patient Treatment Plan</h2>
+    <p class="text-center">Detailed treatment schedule for the patient.</p>
+
+    <div class="patient-info">
+    <h3>Patient Name: <span>Mohamed Ali</span></h3>
+    <h4>Patient ID: <span>#A1023</span></h4>
+    </div>
+
+    <div class="table-container">
+    <table>
+        <thead>
+        <tr>
+            <th>Treatment Type</th>
+            <th>Medication / Procedure</th>
+            <th>Dosage</th>
+            <th>Time</th>
+            <th>Duration</th>
+            <th>Notes</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Medication</td>
+            <td>Paracetamol</td>
+            <td>500 mg</td>
+            <td>8:00 AM</td>
+            <td>7 days</td>
+            <td>After breakfast</td>
+        </tr>
+        <tr>
+            <td>Injection</td>
+            <td>Vitamin B12</td>
+            <td>1 ampoule</td>
+            <td>12:00 PM</td>
+            <td>3 days</td>
+            <td>Administer intramuscularly</td>
+        </tr>
+        <tr>
+            <td>Therapy</td>
+            <td>Physiotherapy Session</td>
+            <td>—</td>
+            <td>6:00 PM</td>
+            <td>2 weeks</td>
+            <td>Focus on left leg mobility</td>
+        </tr>
+        <tr>
+            <td>Follow-up</td>
+            <td>Doctor Consultation</td>
+            <td>—</td>
+            <td>Friday - 10:00 AM</td>
+            <td>Once</td>
+            <td>Review recovery progress</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+</section>
+<section class="vitals" id="vitals">
+    <h2 class="text-center">🩺 Patient Vital Signs</h2>
+    <p class="text-center">Real-time health indicators recorded during monitoring.</p>
+
+    <div class="vitals-container">
+    <div class="vital-card">
+        <h3>Temperature 🌡️</h3>
+        <p class="value">37.2 °C</p>
+        <p class="label">Normal</p>
+    </div>
+
+    <div class="vital-card">
+        <h3>Heart Rate ❤️</h3>
+        <p class="value">78 bpm</p>
+        <p class="label">Stable</p>
+    </div>
+
+
+
+    <div class="vital-card">
+        <h3>Oxygen Level 🫁</h3>
+        <p class="value">98%</p>
+        <p class="label">Healthy</p>
+    </div>
+
+    <div class="vital-card">
+        <h3>Recorded At 🕓</h3>
+        <p class="value">25 Oct 2025 - 06:45 PM</p>
+        <p class="label">Last Update</p>
+    </div>
+    </div>
+</section>
+</div>
+
+
+
+
+
+<!--جزء الاسطف الخاص بعبدو-->
+<div id="staff-abdo-page">
+<section class="home" id="home">
+        <nav>
+            <a href="#">IZOHospital</a>
+            <ul id="action">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">ME</a></li>
+                <li><a href="#members">Staff</a></li>
+            </ul>
+
+            <button id="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </nav>
+        <div class="content">
+            <div class="container-text">
+                <h4>welcome to</h4>
+                <h1><div style="display: inline;" data-aos="fade-right" data-aos-duration="1000">IZO</div><div style="display: inline;" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100"> Hospital </div></h1>
+                <a href="#members" class="btn" data-aos="fade-right" data-aos-duration="1000">Show Staff</a>
+            </div>
+            <div class="container-image" data-aos="fade-right" data-aos-duration="1000">
+                <img src="./photoAbdo/Docs-H.png" alt="" class="shape">
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container-image" data-aos="fade-left" data-aos-duration="1000">
+            <img src="./photoAbdo/nur.jpg" alt="about image">
+        </div>
+        <div class="container-text">
+            <h1 data-aos="fade-right" data-aos-duration="1000">Details <span>!</span></h1>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>Nursing ID:</span> 555555</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>Name:</span> Shahd</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span> Gender:</span> Female</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>Age:</span> 555555</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>Experience Years:</span> 555555</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>Specialization:</span> 555555</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>Doctor Type:</span> 555555</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>Phone:</span> 555555</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>Email:</span> 555555</h5>
+            <h5 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"><span>Hospital ID:</span> 555555</h5>
+        </div>
+    </section>
+    <section class="members" id="members">
+        <h1 class="text-center"><div style="display: inline;" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">team -</div> <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">Staff</span></h1>
+        <div class="members-card">
+            <div data-aos="fade-left" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img Abdelrahman"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">RN.Laila Carter</h2>
+                            <p class="para">Cardiology ❤️
+                            Cardiology is the branch of medicine that deals with the heart and blood vessels.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img Elzoghby"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">MLT.Makron Rose</h2>
+                            <p class="para">Neurology 🧠
+                            Neurology focuses on the brain, spinal cord, and nerves.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img ali"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">PharmD.Kirlis Parker</h2>
+                            <p class="para">Dermatology 🩹
+                            Dermatology is the study of the skin, hair, and nails</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img Nada"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">EMT.Peter Cole</h2>
+                            <p class="para">Pediatrics 👶
+                            Pediatrics is the medical care of infants, children, and teenagers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img Nour"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">RN.Reem Brooks</h2>
+                            <p class="para">Orthopedics 🦴
+                                Orthopedics deals with the bones, joints, muscles, and ligaments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img Marim"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">RN.Nada Blake</h2>
+                            <p class="para">Ophthalmology 👁️Ophthalmology is the study of the eyes and vision</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img eid"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">RN.Chloe Grace</h2>
+                            <p class="para">Psychiatry 🧩Psychiatry focuses on mental health and emotional well-being.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1000">
+                <div class="card-member">
+                    <div class="card-member-img Kirlis"></div>
+                    <div class="card-member-body">
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <span class="bg"></span>
+                        <div class="content">
+                            <h2 class="title">RN.Mia Scott</h2>
+                            <p class="para">Oncology 🎗️Oncology is the branch of medicine that deals with cancer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <footer>
+        <div class="content-footer" data-aos="fade-down" data-aos-duration="1000">
+            <h2>IZO Hospital <span>team</span></h2>
+            <p>pleased to visit our website</p>
+            <p class="end">copyright By IZO Hospital </p>
+        </div>
+    </footer>
+
+    <!--
+        <script src="staff/staffscript.js" ></script>
+    <script src="PA/pa/js/scriptpatient.js" ></script>
+    <script src="./jsAbdo/script.js"></script>
+    -->
+
+    <script src="java.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!--
+
+//ينتظر تحميل محتوى الصفحة بالكامل
+document.addEventListener('DOMContentLoaded', function() {
+   //تخزين مراجع لجميع الصفحات في كائن
+    const pages = {
+        first: document.getElementById('first-page'),
+        old: document.getElementById('old-page'),
+        oldOptions: document.getElementById('old-options-page'),
+        new: document.getElementById('new-page'),
+        doctor: document.getElementById('doctor-page'),
+        patient: document.getElementById('patient-page'),
+        staff: document.getElementById('staff-page'),
+        doctorAbdo: document.getElementById('doctor-abdo-page'),
+        patientAbdo: document.getElementById('patient-abdo-page'),
+        staffAbdo: document.getElementById('staff-abdo-page')
+    };
+
+    // تهيئة جميع الصفحات - إخفاء كل الصفحات ما عدا الصفحة الأولى
+    function initPages() {
+        for (const page in pages) {
+            if (pages[page]) {
+                pages[page].style.display = 'none';
+            }
+        }
+        if (pages.first) {
+            pages.first.style.display = 'block';
+        }
+    }
+
+    // وظيفة لعرض صفحة معينة وإخفاء الباقي
+    function showPage(pageName) {
+        console.log('محاولة فتح الصفحة:', pageName);
+        for (const page in pages) {
+            if (pages[page]) {
+                pages[page].style.display = 'none';
+            }
+        }
+        if (pages[pageName]) {
+            pages[pageName].style.display = 'block';
+            console.log('تم فتح الصفحة:', pageName);
+        } else {
+            console.error('الصفحة غير موجودة:', pageName);
+        }
+    }
+
+    // تهيئة الصفحات عند تحميل الموقع
+    initPages();
+
+    // تهيئة حقول التاريخ
+    initDateFields();
+
+    // إضافة مستمعي الأحداث للأزرار
+    addEventListeners();
+
+    // وظائف إضافة مستمعي الأحداث
+    function addEventListeners() {
+        // الصفحة الرئيسية
+        const submitNew = document.getElementById('submit-new');
+        const submitOld = document.getElementById('submit-old');
+        
+        if (submitNew) {
+            submitNew.addEventListener('click', function() {
+                console.log('نقر على زر جديد');
+                showPage('new');
+            });
+        }
+        
+        if (submitOld) {
+            submitOld.addEventListener('click', function() {
+                console.log('نقر على زر قديم');
+                showPage('old');
+            });
+        }
+
+        // صفحة القديم
+        const submitFinseOld = document.getElementById('submit-finseold');
+        if (submitFinseOld) {
+            submitFinseOld.addEventListener('click', function() {
+                console.log('نقر على زر تسجيل الدخول للقديم');
+                const userId = document.getElementById('id-old').value;
+                if (validateUserId(userId)) {
+                    showPage('oldOptions');
+                }
+            });
+        }
+
+        // صفحة القديم الثانية
+        const submitDoctorId = document.getElementById('submit-doctor-id');
+        const submitPatientId = document.getElementById('submit-patient-id');
+        const submitStaffId = document.getElementById('submit-staff-id');
+        
+        if (submitDoctorId) {
+            submitDoctorId.addEventListener('click', function() {
+                console.log('نقر على زر الدكتور في القديم');
+                showPage('doctorAbdo');
+            });
+        }
+        
+        if (submitPatientId) {
+            submitPatientId.addEventListener('click', function() {
+                console.log('نقر على زر المريض في القديم');
+                showPage('patientAbdo');
+            });
+        }
+        
+        if (submitStaffId) {
+            submitStaffId.addEventListener('click', function() {
+                console.log('نقر على زر الموظف في القديم');
+                showPage('staffAbdo');
+            });
+        }
+
+        // صفحة الجديد
+        const submitDoctorPage = document.getElementById('submit-doctor-page');
+        const submitPatientPage = document.getElementById('submit-patient-page');
+        const submitStaffPage = document.getElementById('submit-staff-page');
+        
+        if (submitDoctorPage) {
+            submitDoctorPage.addEventListener('click', function() {
+                console.log('نقر على زر الدكتور في الجديد');
+                showPage('doctor');
+            });
+        }
+        
+        if (submitPatientPage) {
+            submitPatientPage.addEventListener('click', function() {
+                console.log('نقر على زر المريض في الجديد');
+                showPage('patient');
+            });
+        }
+        
+        if (submitStaffPage) {
+            submitStaffPage.addEventListener('click', function() {
+                console.log('نقر على زر الموظف في الجديد');
+                showPage('staff');
+            });
+        }
+
+        // صفحة الدكتور
+        const submitDoc = document.getElementById('submit-doc');
+        if (submitDoc) {
+            submitDoc.addEventListener('click', function() {
+                console.log('نقر على زر تسجيل الدكتور');
+                if (validateDoctorForm()) {
+                    console.log('تم التحقق من بيانات الدكتور بنجاح');
+                    // حفظ بيانات الدكتور في قاعدة البيانات
+                    saveDoctorData();
+                    showPage('doctorAbdo');
+                } else {
+                    console.log('فشل التحقق من بيانات الدكتور');
+                }
+            });
+        }
+
+        // صفحة المريض
+        const submitPati = document.getElementById('submit-pati');
+        if (submitPati) {
+            submitPati.addEventListener('click', function() {
+                console.log('نقر على زر تسجيل المريض');
+                if (validatePatientForm()) {
+                    console.log('تم التحقق من بيانات المريض بنجاح');
+                    // حفظ بيانات المريض في قاعدة البيانات
+                    savePatientData();
+                    showPage('patientAbdo');
+                } else {
+                    console.log('فشل التحقق من بيانات المريض');
+                }
+            });
+        }
+
+        // صفحة الموظفين
+        const submitStaf = document.getElementById('submit-staf');
+        if (submitStaf) {
+            submitStaf.addEventListener('click', function() {
+                console.log('نقر على زر تسجيل الموظف');
+                if (validateStaffForm()) {
+                    console.log('تم التحقق من بيانات الموظف بنجاح');
+                    // حفظ بيانات الموظف في قاعدة البيانات
+                    saveStaffData();
+                    showPage('staffAbdo');
+                } else {
+                    console.log('فشل التحقق من بيانات الموظف');
+                }
+            });
+        }
+
+        // إضافة مستمعي الأحداث للتحقق من صحة البيانات أثناء الكتابة
+        addValidationListeners();
+
+        // إضافة مستمعي الأحداث للقائمة المتحركة في صفحات عبدو
+        initMenuToggleForAllPages();
+    }
+
+    // وظائف التحقق من صحة البيانات
+    function validateUserId(userId) {
+        const errorElement = document.getElementById('idError');
+        if (!errorElement) {
+            console.error('عنصر الخطأ غير موجود');
+            return false;
+        }
+        
+        if (!userId || userId.length < 3 || userId.length > 15) {
+            errorElement.style.display = 'block';
+            return false;
+        } else {
+            errorElement.style.display = 'none';
+            return true;
+        }
+    }
+
+    // //////////////////////////////////////صفحه تسجيل الدكتور
+    function validateDoctorForm() {
+        let isValid = true;
+        console.log('بدء التحقق من بيانات الدكتور');
+        
+        // التحقق من الاسم
+        const nameInput = document.getElementById('userName');
+        const nameError = document.getElementById('nameError');
+        if (nameInput && nameError) {
+            const name = nameInput.value;
+            if (name.length < 3 || name.length > 30) {
+                nameError.style.display = 'block';
+                isValid = false;
+                console.log('خطأ في الاسم');
+            } else {
+                nameError.style.display = 'none';
+            }
+        } else {
+            console.error('عناصر الاسم غير موجودة');
+            isValid = false;
+        }
+        
+        // التحقق من العمر
+        const ageInput = document.getElementById('id-user');
+        const ageError = document.getElementById('idError');
+        if (ageInput && ageError) {
+            const age = parseInt(ageInput.value);
+            if (isNaN(age) || age < 25 || age > 70) {
+                ageError.style.display = 'block';
+                isValid = false;
+                console.log('خطأ في العمر');
+            } else {
+                ageError.style.display = 'none';
+            }
+        }
+        
+        // التحقق من البريد الإلكتروني
+        const emailInput = document.getElementById('userEmail');
+        const emailError = document.getElementById('emailError');
+        if (emailInput && emailError) {
+            const email = emailInput.value;
+            if (!validateEmail(email)) {
+                emailError.style.display = 'block';
+                isValid = false;
+                console.log('خطأ في البريد الإلكتروني');
+            } else {
+                emailError.style.display = 'none';
+            }
+        }
+        
+        // التحقق من رقم الهاتف
+        const phoneInput = document.getElementById('your-phone');
+        if (phoneInput) {
+            const phone = phoneInput.value;
+            if (!validatePhone(phone)) {
+                alert('يرجى إدخال رقم هاتف صحيح');
+                isValid = false;
+                console.log('خطأ في رقم الهاتف');
+            }
+        }
+        
+        // التحقق من سنوات الخبرة
+        const experienceInput = document.getElementById('id-experience');
+        if (experienceInput) {
+            const experience = parseInt(experienceInput.value);
+            if (isNaN(experience) || experience < 1 || experience > 100) {
+                alert('يجب أن تكون سنوات الخبرة بين 1 و 100');
+                isValid = false;
+                console.log('خطأ في سنوات الخبرة');
+            }
+        }
+        
+        // التحقق من اختيار المستشفى
+        const hospitalSelect = document.getElementById('hospital-numberr');
+        if (hospitalSelect) {
+            const hospital = hospitalSelect.value;
+            if (!hospital || hospital === 'disabled selected') {
+                alert('يرجى اختيار رقم المستشفى');
+                isValid = false;
+                console.log('خطأ في اختيار المستشفى');
+            }
+        }
+        
+        // التحقق من اختيار التخصص
+        const departmentSelect = document.getElementById('doctordepartment');
+        if (departmentSelect) {
+            const department = departmentSelect.value;
+            if (!department || department === 'disabled selected') {
+                alert('يرجى اختيار التخصص');
+                isValid = false;
+                console.log('خطأ في اختيار التخصص');
+            }
+        }
+        
+        // التحقق من اختيار النوع
+        const gender = document.querySelector('input[name="gender"]:checked');
+        if (!gender) {
+            alert('يرجى اختيار الجنس');
+            isValid = false;
+            console.log('خطأ في اختيار الجنس');
+        }
+        
+        console.log('نتيجة التحقق من الدكتور:', isValid);
+        return isValid;
+    }
+
+    // صفحه تسجيل المريض - الإصدار المعدل والمؤكد
+    function validatePatientForm() {
+        let isValid = true;
+        console.log('بدء التحقق من بيانات المريض');
+        
+        // التحقق من الاسم
+        const nameInput = document.getElementById('userName');
+        const nameError = document.getElementById('nameError');
+        if (nameInput && nameError) {
+            const name = nameInput.value.trim();
+            if (name.length < 3 || name.length > 40) {
+                nameError.style.display = 'block';
+                isValid = false;
+                console.log('خطأ في الاسم');
+            } else {
+                nameError.style.display = 'none';
+            }
+        }
+        
+        // التحقق من رقم الهاتف - الحل المؤكد
+        const phoneInput = document.getElementById('your-phone');
+        if (phoneInput) {
+            const phone = phoneInput.value.trim();
+            console.log('📱 رقم الهاتف المدخل:', phone);
+            
+            // التحقق من أن الحقل غير فارغ
+            if (!phone) {
+                alert('يرجى إدخال رقم الهاتف');
+                isValid = false;
+                console.log('خطأ: رقم الهاتف فارغ');
+            } 
+            // التحقق من صحة رقم الهاتف باستخدام الدالة المحسنة
+            else if (!validatePhoneEnhanced(phone)) {
+                alert('يرجى إدخال رقم هاتف صحيح (11 رقماً ويبدأ بـ 010 أو 011 أو 012 أو 015)');
+                isValid = false;
+                console.log('خطأ في رقم الهاتف:', phone);
+            } else {
+                console.log('✅ رقم الهاتف صحيح:', phone);
+            }
+        }
+        
+        // التحقق من الرقم القومي
+        const nationalIdInput = document.getElementById('id-national');
+        if (nationalIdInput) {
+            const nationalId = nationalIdInput.value.trim();
+            if (nationalId.length !== 14 || !/^\d+$/.test(nationalId)) {
+                alert('يجب أن يكون الرقم القومي 14 رقماً');
+                isValid = false;
+                console.log('خطأ في الرقم القومي');
+            }
+        }
+        
+        // التحقق من اختيار المستشفى
+        const hospitalSelect = document.getElementById('hospital-number');
+        if (hospitalSelect) {
+            if (hospitalSelect.selectedIndex <= 0) {
+                alert('يرجى اختيار رقم المستشفى من القائمة');
+                isValid = false;
+                console.log('خطأ في اختيار المستشفى');
+            }
+        }
+
+        // التحقق من اختيار المرض
+        const illnessSelect = document.getElementById('patient-illness');
+        if (illnessSelect) {
+            if (illnessSelect.selectedIndex <= 0) {
+                alert('يرجى اختيار المرض');
+                isValid = false;
+                console.log('خطأ في اختيار المرض');
+            }
+        }
+        
+        // التحقق من تاريخ الميلاد
+        const daySelect = document.getElementById('day');
+        const monthSelect = document.getElementById('month');
+        const yearSelect = document.getElementById('year');
+        if (daySelect && monthSelect && yearSelect) {
+            const day = daySelect.value;
+            const month = monthSelect.value;
+            const year = yearSelect.value;
+            if (!day || !month || !year) {
+                alert('يرجى اختيار تاريخ الميلاد كاملاً');
+                isValid = false;
+                console.log('خطأ في تاريخ الميلاد');
+            }
+        }
+        
+        // التحقق من العنوان
+        const addressSelect = document.getElementById('address');
+        if (addressSelect) {
+            if (addressSelect.selectedIndex <= 0) {
+                alert('يرجى اختيار العنوان');
+                isValid = false;
+                console.log('خطأ في العنوان');
+            }
+        }
+        
+        // التحقق من اختيار النوع
+        const gender = document.querySelector('input[name="gender"]:checked');
+        if (!gender) {
+            alert('يرجى اختيار الجنس');
+            isValid = false;
+            console.log('خطأ في اختيار الجنس');
+        }
+        
+        console.log('نتيجة التحقق من المريض:', isValid);
+        return isValid;
+    }
+
+    // صفحه تسجيل الاسطف///////////////////////////////////////////////////
+    function validateStaffForm() {
+        let isValid = true;
+        console.log('بدء التحقق من بيانات الموظف');
+
+        // التحقق من الاسم
+        const nameInput = document.querySelector('#staff-page input[name="userName"]');
+        const nameError = document.querySelector('#staff-page #nameError');
+        if (nameInput && nameError) {
+            if (nameInput.value.length < 3 || nameInput.value.length > 40) {
+                nameError.style.display = 'block';
+                isValid = false;
+            } else {
+                nameError.style.display = 'none';
+            }
+        }
+        
+        // التحقق من رقم الهاتف
+        const phoneInput = document.querySelector('#staff-page input[name="phone"]');
+        const phoneError = document.querySelector('#staff-page #emailError');
+        if (phoneInput && phoneError) {
+            if (phoneInput.value.length !== 11 || isNaN(phoneInput.value)) {
+                phoneError.textContent = 'يرجى إدخال رقم هاتف صحيح (11 رقم)';
+                phoneError.style.display = 'block';
+                isValid = false;
+            } else {
+                phoneError.style.display = 'none';
+            }
+        }
+        
+        // التحقق من البريد الإلكتروني
+        const emailInput = document.querySelector('#staff-page input[name="userEmail"]');
+        const emailErrors = document.querySelectorAll('#staff-page #emailError');
+        const emailError = emailErrors[1];
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (emailInput && emailError) {
+            if (!emailPattern.test(emailInput.value)) {
+                emailError.style.display = 'block';
+                isValid = false;
+            } else {
+                emailError.style.display = 'none';
+            }
+        }
+        
+        // التحقق من العمر
+        const ageInput = document.querySelector('#staff-page input[name="idage"]');
+        const ageError = document.querySelector('#staff-page #idError');
+        if (ageInput && ageError) {
+            if (ageInput.value < 18 || ageInput.value > 65 || !ageInput.value) {
+                ageError.textContent = 'يجب أن يكون العمر بين 18 و 65 سنة';
+                ageError.style.display = 'block';
+                isValid = false;
+            } else {
+                ageError.style.display = 'none';
+            }
+        }
+        
+        // التحقق من النوع
+        const genderRadios = document.querySelectorAll('#staff-page input[name="gender"]');
+        let genderSelected = false;
+        if (genderRadios) {
+            genderRadios.forEach(radio => {
+                if (radio.checked) genderSelected = true;
+            });
+            if (!genderSelected) {
+                alert('يرجى اختيار النوع');
+                isValid = false;
+            }
+        }
+
+        // التحقق من معرف المستشفى
+        const hospitalSelect = document.querySelector('#staff-page select[name="Hospital-id"]');
+        const hospitalError = document.querySelector('#staff-page #statusError');
+        if (hospitalSelect && hospitalError) {
+            if (hospitalSelect.selectedIndex <= 0) {
+                hospitalError.textContent = 'يرجى اختيار رقم المستشفى';
+                hospitalError.style.display = 'block';
+                isValid = false;
+            } else {
+                hospitalError.style.display = 'none';
+            }
+        }
+        
+        // التحقق من المسمى الوظيفي
+        const jobSelect = document.querySelector('#staff-page select[name="Hospital-job"]');
+        const jobErrors = document.querySelectorAll('#staff-page #statusError');
+        const jobError = jobErrors[1];
+        if (jobSelect && jobError) {
+            if (!jobSelect.value || jobSelect.value.includes("disabled")) {
+                jobError.style.display = 'block';
+                isValid = false;
+            } else {
+                jobError.style.display = 'none';
+            }
+        }
+        
+        return isValid;
+    }
+
+    // وظائف مساعدة للتحقق من صحة البيانات - الإصدار المحسن
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+
+    // الدالة الأصلية (للتوافق مع الأجزاء الأخرى)
+    function validatePhone(phone) {
+        return validatePhoneEnhanced(phone);
+    }
+
+    // دالة التحقق من رقم الهاتف المحسنة والمؤكدة
+    function validatePhoneEnhanced(phone) {
+        // إزالة أي مسافات أو شرطات أو أي أحرف غير رقمية
+        const cleanedPhone = phone.replace(/\D/g, '');
+        console.log('📱 رقم الهاتف بعد التنظيف:', cleanedPhone);
+        
+        // التحقق من أن الرقم يتكون من 11 رقمًا ويبدأ بـ 01
+        // النمط الجديد: يبدأ بـ 01 ثم أحد الأرقام (0,1,2,5) ثم 8 أرقام
+        const re = /^01[0125]\d{8}$/;
+        const isValid = re.test(cleanedPhone);
+        
+        console.log('✅ نتيجة التحقق من الهاتف:', isValid, 'للرقم:', cleanedPhone);
+        return isValid;
+    }
+
+    // إضافة مستمعي الأحداث للتحقق أثناء الكتابة
+    function addValidationListeners() {
+        // التحقق من الاسم أثناء الكتابة
+        const nameInputs = document.querySelectorAll('input[name="userName"]');
+        nameInputs.forEach(input => {
+            input.addEventListener('input', function() {
+                const errorElement = this.parentElement.querySelector('.error-message');
+                if (errorElement) {
+                    if (this.value.length < 3 || this.value.length > 30) {
+                        errorElement.style.display = 'block';
+                    } else {
+                        errorElement.style.display = 'none';
+                    }
+                }
+            });
+        });
+
+        // التحقق من البريد الإلكتروني أثناء الكتابة
+        const emailInputs = document.querySelectorAll('input[type="email"]');
+        emailInputs.forEach(input => {
+            input.addEventListener('input', function() {
+                const errorElement = this.parentElement.querySelector('.error-message');
+                if (errorElement) {
+                    if (!validateEmail(this.value)) {
+                        errorElement.style.display = 'block';
+                    } else {
+                        errorElement.style.display = 'none';
+                    }
+                }
+            });
+        });
+
+        // التحقق من رقم الهاتف أثناء الكتابة
+        const phoneInputs = document.querySelectorAll('input[type="tel"]');
+        phoneInputs.forEach(input => {
+            input.addEventListener('input', function() {
+                if (!validatePhoneEnhanced(this.value)) {
+                    this.style.borderColor = 'red';
+                } else {
+                    this.style.borderColor = '';
+                }
+            });
+        });
+    }
+
+    // تهيئة حقول التاريخ
+    function initDateFields() {
+        const daySelect = document.getElementById('day');
+        const monthSelect = document.getElementById('month');
+        const yearSelect = document.getElementById('year');
+        
+        if (daySelect && monthSelect && yearSelect) {
+            // ملء الأيام (1-31)
+            for (let i = 1; i <= 31; i++) {
+                const option = document.createElement('option');
+                option.value = i;
+                option.textContent = i;
+                daySelect.appendChild(option);
+            }
+            
+            // ملء السنوات (من 1920 إلى 2025)
+            const currentYear = new Date().getFullYear();
+            for (let i = currentYear; i >= 1920; i--) {
+                const option = document.createElement('option');
+                option.value = i;
+                option.textContent = i;
+                yearSelect.appendChild(option);
+            }
+        }
+    }
+
+    // وظائف حفظ البيانات في قاعدة البيانات
+    function saveDoctorData() {
+        const doctorData = {
+            name: document.getElementById('userName').value,
+            age: document.getElementById('id-user').value,
+            email: document.getElementById('userEmail').value,
+            phone: document.getElementById('your-phone').value,
+            experience: document.getElementById('id-experience').value,
+            hospital: document.getElementById('hospital-numberr').value,
+            doctorType: document.getElementById('doctor-status').value,
+            department: document.getElementById('doctordepartment').value,
+            gender: document.querySelector('input[name="gender"]:checked').value
+        };
+        
+        console.log('حفظ بيانات الدكتور:', doctorData);
+        localStorage.setItem('doctorData', JSON.stringify(doctorData));
+    }
+
+    function savePatientData() {
+        const patientData = {
+            name: document.getElementById('userName').value,
+            phone: document.getElementById('your-phone').value,
+            nationalId: document.getElementById('id-national').value,
+            hospital: document.getElementById('hospital-number').value,
+            illness: document.getElementById('patient-illness').value,
+            birthDate: {
+                day: document.getElementById('day').value,
+                month: document.getElementById('month').value,
+                year: document.getElementById('year').value
+            },
+            address: document.getElementById('address').value,
+            gender: document.querySelector('input[name="gender"]:checked').value
+        };
+        
+        console.log('حفظ بيانات المريض:', patientData);
+        localStorage.setItem('patientData', JSON.stringify(patientData));
+    }
+
+    function saveStaffData() {
+        const staffData = {
+            name: document.getElementById('userName').value,
+            phone: document.getElementById('your-phone').value,
+            email: document.getElementById('userEmail').value,
+            age: document.getElementById('id-user').value,
+            gender: document.querySelector('input[name="gender"]:checked').value,
+            hospital: document.getElementById('hospital-numberr').value,
+            job: document.getElementById('hospital-job').value
+        };
+        
+        console.log('حفظ بيانات الموظف:', staffData);
+        localStorage.setItem('staffData', JSON.stringify(staffData));
+    }
+
+    // إضافة وظائف للقائمة المتحركة في صفحات عبدو
+    function initMenuToggleForAllPages() {
+        // البحث عن جميع أزرار القائمة في جميع الصفحات
+        const menuButtons = document.querySelectorAll('#menu');
+        const actionMenus = document.querySelectorAll('#action');
+        
+        menuButtons.forEach((menuButton, index) => {
+            if (menuButton && actionMenus[index]) {
+                menuButton.addEventListener('click', function() {
+                    actionMenus[index].classList.toggle('active');
+                });
+            }
+        });
+    }
+}); 
+
+// وظائف القائمة المنسدلة
+// دالة موحدة لإدارة جميع القوائم المنسدلة
+function setupDropdown(menuId, actionsId) {
+    // الحصول على العناصر
+    const menu = document.getElementById(menuId);
+    const actions = document.getElementById(actionsId);
+    
+    // التحقق من وجود العناصر
+    if (!menu || !actions) {
+        console.error(`لم يتم العثور على العناصر: ${menuId}, ${actionsId}`);
+        return;
+    }
+    
+    // إضافة حدث النقر على زر القائمة
+    menu.addEventListener("click", (event) => {
+        event.stopPropagation(); // منع انتشار الحدث
+        toggleMenu(menu, actions);
+    });
+    
+    // إضافة حدث النقر على المستند لإغلاق القائمة
+    document.addEventListener("click", (event) => {
+        if (!menu.contains(event.target) && !actions.contains(event.target)) {
+            closeMenu(menu, actions);
+        }
+    });
+    
+    // إضافة أحداث للروابط داخل القائمة
+    const links = actions.querySelectorAll("a"); 
+    links.forEach(link => {
+        link.addEventListener("click", () => {
+            closeMenu(menu, actions); 
+        });
+    });
+}
+
+// دالة لتبديل حالة القائمة (فتح/إغلاق)
+function toggleMenu(menu, actions) {
+    menu.classList.toggle("is-active");
+    actions.classList.toggle("is-active");
+}
+
+// دالة لإغلاق القائمة
+function closeMenu(menu, actions) {
+    menu.classList.remove("is-active");
+    actions.classList.remove("is-active");
+}
+
+// تهيئة جميع القوائم المنسدلة
+document.addEventListener('DOMContentLoaded', function() {
+    // إعداد القوائم للطبيب، المريض، والموظف
+    setupDropdown("menu", "action");     // المريض
+    
+    // تهيئة AOS مرة واحدة فقط
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    }
+});
+
+
+
+
+
+
+
+
+
+-->
+
+
+
+
+
+<!--//ينتظر تحميل محتوى الصفحة بالكامل
+document.addEventListener('DOMContentLoaded', function() {
+   //تخزين مراجع لجميع الصفحات في كائن
+    const pages = {
+        first: document.getElementById('first-page'),
+        old: document.getElementById('old-page'),
+        oldOptions: document.getElementById('old-options-page'),
+        new: document.getElementById('new-page'),
+        doctor: document.getElementById('doctor-page'),
+        patient: document.getElementById('patient-page'),
+        staff: document.getElementById('staff-page'),
+        doctorAbdo: document.getElementById('doctor-abdo-page'),
+        patientAbdo: document.getElementById('patient-abdo-page'),
+        staffAbdo: document.getElementById('staff-abdo-page')
+    };
+
+    // تهيئة جميع الصفحات - إخفاء كل الصفحات ما عدا الصفحة الأولى
+    function initPages() {
+        for (const page in pages) {
+            if (pages[page]) {
+                pages[page].style.display = 'none';
+            }
+        }
+        if (pages.first) {
+            pages.first.style.display = 'block';
+        }
+    }
+
+    // وظيفة لعرض صفحة معينة وإخفاء الباقي
+    function showPage(pageName) {
+        console.log('محاولة فتح الصفحة:', pageName);
+        for (const page in pages) {
+            if (pages[page]) {
+                pages[page].style.display = 'none';
+            }
+        }
+        if (pages[pageName]) {
+            pages[pageName].style.display = 'block';
+            console.log('تم فتح الصفحة:', pageName);
+        } else {
+            console.error('الصفحة غير موجودة:', pageName);
+        }
+    }
+
+    // تهيئة الصفحات عند تحميل الموقع
+    initPages();
+
+    // تهيئة حقول التاريخ
+    initDateFields();
+
+    // إضافة مستمعي الأحداث للأزرار
+    addEventListeners();
+
+    // وظائف إضافة مستمعي الأحداث
+    function addEventListeners() {
+        // الصفحة الرئيسية
+        const submitNew = document.getElementById('submit-new');
+        const submitOld = document.getElementById('submit-old');
+        
+        if (submitNew) {
+            submitNew.addEventListener('click', function() {
+                console.log('نقر على زر جديد');
+                showPage('new');
+            });
+        }
+        
+        if (submitOld) {
+            submitOld.addEventListener('click', function() {
+                console.log('نقر على زر قديم');
+                showPage('old');
+            });
+        }
+
+        // صفحة القديم
+        const submitFinseOld = document.getElementById('submit-finseold');
+        if (submitFinseOld) {
+            submitFinseOld.addEventListener('click', function() {
+                console.log('نقر على زر تسجيل الدخول للقديم');
+                const userId = document.getElementById('id-old').value;
+                if (validateUserId(userId)) {
+                    showPage('oldOptions');
+                }
+            });
+        }
+
+        // صفحة القديم الثانية
+        const submitDoctorId = document.getElementById('submit-doctor-id');
+        const submitPatientId = document.getElementById('submit-patient-id');
+        const submitStaffId = document.getElementById('submit-staff-id');
+        
+        if (submitDoctorId) {
+            submitDoctorId.addEventListener('click', function() {
+                console.log('نقر على زر الدكتور في القديم');
+                showPage('doctorAbdo');
+            });
+        }
+        
+        if (submitPatientId) {
+            submitPatientId.addEventListener('click', function() {
+                console.log('نقر على زر المريض في القديم');
+                showPage('patientAbdo');
+            });
+        }
+        
+        if (submitStaffId) {
+            submitStaffId.addEventListener('click', function() {
+                console.log('نقر على زر الموظف في القديم');
+                showPage('staffAbdo');
+            });
+        }
+
+        // صفحة الجديد
+        const submitDoctorPage = document.getElementById('submit-doctor-page');
+        const submitPatientPage = document.getElementById('submit-patient-page');
+        const submitStaffPage = document.getElementById('submit-staff-page');
+        
+        if (submitDoctorPage) {
+            submitDoctorPage.addEventListener('click', function() {
+                console.log('نقر على زر الدكتور في الجديد');
+                showPage('doctor');
+            });
+        }
+        
+        if (submitPatientPage) {
+            submitPatientPage.addEventListener('click', function() {
+                console.log('نقر على زر المريض في الجديد');
+                showPage('patient');
+            });
+        }
+        
+        if (submitStaffPage) {
+            submitStaffPage.addEventListener('click', function() {
+                console.log('نقر على زر الموظف في الجديد');
+                showPage('staff');
+            });
+        }
+
+        // صفحة الدكتور
+        const submitDoc = document.getElementById('submit-doc');
+        if (submitDoc) {
+            submitDoc.addEventListener('click', function() {
+                console.log('نقر على زر تسجيل الدكتور');
+                if (validateDoctorForm()) {
+                    console.log('تم التحقق من بيانات الدكتور بنجاح');
+                    // حفظ بيانات الدكتور في قاعدة البيانات
+                    saveDoctorData();
+                    showPage('doctorAbdo');
+                } else {
+                    console.log('فشل التحقق من بيانات الدكتور');
+                }
+            });
+        }
+
+        // صفحة المريض
+        const submitPati = document.getElementById('submit-pati');
+        if (submitPati) {
+            submitPati.addEventListener('click', function() {
+                console.log('نقر على زر تسجيل المريض');
+                if (validatePatientForm()) {
+                    console.log('تم التحقق من بيانات المريض بنجاح');
+                    // حفظ بيانات المريض في قاعدة البيانات
+                    savePatientData();
+                    showPage('patientAbdo');
+                } else {
+                    console.log('فشل التحقق من بيانات المريض');
+                }
+            });
+        }
+
+        // صفحة الموظفين
+        const submitStaf = document.getElementById('submit-staf');
+        if (submitStaf) {
+            submitStaf.addEventListener('click', function() {
+                console.log('نقر على زر تسجيل الموظف');
+                if (validateStaffForm()) {
+                    console.log('تم التحقق من بيانات الموظف بنجاح');
+                    // حفظ بيانات الموظف في قاعدة البيانات
+                    saveStaffData();
+                    showPage('staffAbdo');
+                } else {
+                    console.log('فشل التحقق من بيانات الموظف');
+                }
+            });
+        }
+
+        // إضافة مستمعي الأحداث للتحقق من صحة البيانات أثناء الكتابة
+        addValidationListeners();
+
+        // إضافة مستمعي الأحداث للقائمة المتحركة في صفحات عبدو
+        initMenuToggleForAllPages();
+    }
+
+    // وظائف التحقق من صحة البيانات
+    function validateUserId(userId) {
+        const errorElement = document.getElementById('idError');
+        if (!errorElement) {
+            console.error('عنصر الخطأ غير موجود');
+            return false;
+        }
+        
+        if (!userId || userId.length < 3 || userId.length > 15) {
+            errorElement.style.display = 'block';
+            return false;
+        } else {
+            errorElement.style.display = 'none';
+            return true;
+        }
+    }
+
+    // صفحه تسجيل الدكتور
+    function validateDoctorForm() {
+        let isValid = true;
+        console.log('بدء التحقق من بيانات الدكتور');
+        
+        // التحقق من الاسم
+        const nameInput = document.getElementById('userName');
+        const nameError = document.getElementById('nameError');
+        if (nameInput && nameError) {
+            const name = nameInput.value;
+            if (name.length < 3 || name.length > 30) {
+                nameError.style.display = 'block';
+                isValid = false;
+                console.log('خطأ في الاسم');
+            } else {
+                nameError.style.display = 'none';
+            }
+        } else {
+            console.error('عناصر الاسم غير موجودة');
+            isValid = false;
+        }
+        
+        // التحقق من العمر
+        const ageInput = document.getElementById('id-user');
+        const ageError = document.getElementById('idError');
+        if (ageInput && ageError) {
+            const age = parseInt(ageInput.value);
+            if (isNaN(age) || age < 25 || age > 70) {
+                ageError.style.display = 'block';
+                isValid = false;
+                console.log('خطأ في العمر');
+            } else {
+                ageError.style.display = 'none';
+            }
+        }
+        
+        // التحقق من البريد الإلكتروني
+        const emailInput = document.getElementById('userEmail');
+        const emailError = document.getElementById('emailError');
+        if (emailInput && emailError) {
+            const email = emailInput.value;
+            if (!validateEmail(email)) {
+                emailError.style.display = 'block';
+                isValid = false;
+                console.log('خطأ في البريد الإلكتروني');
+            } else {
+                emailError.style.display = 'none';
+            }
+        }
+        
+        // التحقق من رقم الهاتف
+        const phoneInput = document.getElementById('your-phone');
+        if (phoneInput) {
+            const phone = phoneInput.value;
+            if (!validatePhone(phone)) {
+                alert('يرجى إدخال رقم هاتف صحيح');
+                isValid = false;
+                console.log('خطأ في رقم الهاتف');
+            }
+        }
+        
+        // التحقق من سنوات الخبرة
+        const experienceInput = document.getElementById('id-experience');
+        if (experienceInput) {
+            const experience = parseInt(experienceInput.value);
+            if (isNaN(experience) || experience < 1 || experience > 100) {
+                alert('يجب أن تكون سنوات الخبرة بين 1 و 100');
+                isValid = false;
+                console.log('خطأ في سنوات الخبرة');
+            }
+        }
+        
+        // التحقق من اختيار المستشفى
+        const hospitalSelect = document.getElementById('hospital-numberr');
+        if (hospitalSelect) {
+            const hospital = hospitalSelect.value;
+            if (!hospital || hospital === 'disabled selected') {
+                alert('يرجى اختيار رقم المستشفى');
+                isValid = false;
+                console.log('خطأ في اختيار المستشفى');
+            }
+        }
+        
+        // التحقق من اختيار التخصص
+        const departmentSelect = document.getElementById('doctordepartment');
+        if (departmentSelect) {
+            const department = departmentSelect.value;
+            if (!department || department === 'disabled selected') {
+                alert('يرجى اختيار التخصص');
+                isValid = false;
+                console.log('خطأ في اختيار التخصص');
+            }
+        }
+        
+        // التحقق من اختيار النوع
+        const gender = document.querySelector('input[name="gender"]:checked');
+        if (!gender) {
+            alert('يرجى اختيار الجنس');
+            isValid = false;
+            console.log('خطأ في اختيار الجنس');
+        }
+        
+        console.log('نتيجة التحقق من الدكتور:', isValid);
+        return isValid;
+    }
+
+    // صفحه تسجيل المريض - الإصدار المعدل النهائي/////////////////////////
+
+
+    function validatePatientForm() {
+        let isValid = true;
+        console.log('بدء التحقق من بيانات المريض');
+
+
+        // التحقق من الاسم - إصلاح نهائي
+        const nameInput = document.getElementById('userName');
+        const nameError = document.getElementById('nameError');
+        if (nameInput && nameError) {
+            const name = nameInput.value.trim();
+            console.log('👤 الاسم المدخل:', name);
+            
+            if (!name) {
+                nameError.textContent = 'يرجى إدخال الاسم';
+                nameError.style.display = 'block';
+                isValid = false;
+                console.log('خطأ: الاسم فارغ');
+            } else if (name.length < 3) {
+                nameError.textContent = 'الاسم يجب أن يكون 3 أحرف على الأقل';
+                nameError.style.display = 'block';
+                isValid = false;
+                console.log('خطأ: الاسم أقل من 3 أحرف');
+            } else if (name.length > 40) {
+                nameError.textContent = 'الاسم يجب أن لا يتجاوز 40 حرف';
+                nameError.style.display = 'block';
+                isValid = false;
+                console.log('خطأ: الاسم أكثر من 40 حرف');
+            } else {
+                nameError.style.display = 'none';
+                console.log('✅ الاسم صحيح:', name);
+            }
+        } else {
+            console.error('عناصر الاسم غير موجودة');
+            isValid = false;
+        }
+        
+        // التحقق من رقم الهاتف - الإصلاح النهائي
+        const phoneInput = document.getElementById('your-phone');
+        if (phoneInput) {
+            const phone = phoneInput.value.trim();
+            console.log('📱 رقم الهاتف المدخل:', phone);
+            
+            if (!phone) {
+                alert('يرجى إدخال رقم الهاتف');
+                isValid = false;
+            } else if (!validatePhone(phone)) {
+                alert('يرجى إدخال رقم هاتف صحيح (11 رقماً ويبدأ بـ 010 أو 011 أو 012 أو 015)');
+                isValid = false;
+                console.log('خطأ في رقم الهاتف:', phone);
+            } else {
+                console.log('✅ رقم الهاتف صحيح:', phone);
+            }
+        }
+
+
+
+             // التحقق من الرقم القومي - إصلاح نهائي
+        const nationalIdInput = document.getElementById('id-national');
+        if (nationalIdInput) {
+            const nationalId = nationalIdInput.value.trim();
+            console.log('🆔 الرقم القومي المدخل:', nationalId, 'الطول:', nationalId.length);
+            
+            if (!nationalId) {
+                alert('يرجى إدخال الرقم القومي');
+                isValid = false;
+            } else if (!/^\d+$/.test(nationalId)) {
+                alert('الرقم القومي يجب أن يحتوي على أرقام فقط');
+                isValid = false;
+                console.log('خطأ: الرقم القومي يحتوي على أحرف غير رقمية');
+            } else if (nationalId.length !== 14) {
+                alert('يجب أن يكون الرقم القومي 14 رقماً (أنت أدخلت ' + nationalId.length + ' رقماً)');
+                isValid = false;
+                console.log('خطأ في الرقم القومي:', nationalId, 'الطول:', nationalId.length);
+            } else {
+                console.log('✅ الرقم القومي صحيح:', nationalId);
+            }
+        }
+        
+    
+        // التحقق من اختيار المستشفى
+        const hospitalSelect = document.getElementById('hospital-number');
+        if (hospitalSelect) {
+            if (hospitalSelect.selectedIndex <= 0) {
+                alert('يرجى اختيار رقم المستشفى من القائمة');
+                isValid = false;
+                console.log('خطأ في اختيار المستشفى');
+            }
+        }
+
+        // التحقق من اختيار المرض
+        const illnessSelect = document.getElementById('patient-illness');
+        if (illnessSelect) {
+            if (illnessSelect.selectedIndex <= 0) {
+                alert('يرجى اختيار المرض');
+                isValid = false;
+                console.log('خطأ في اختيار المرض');
+            }
+        }
+        
+        // التحقق من تاريخ الميلاد
+        const daySelect = document.getElementById('day');
+        const monthSelect = document.getElementById('month');
+        const yearSelect = document.getElementById('year');
+        if (daySelect && monthSelect && yearSelect) {
+            const day = daySelect.value;
+            const month = monthSelect.value;
+            const year = yearSelect.value;
+            if (!day || !month || !year) {
+                alert('يرجى اختيار تاريخ الميلاد كاملاً');
+                isValid = false;
+                console.log('خطأ في تاريخ الميلاد');
+            }
+        }
+        
+        // التحقق من العنوان
+        const addressSelect = document.getElementById('address');
+        if (addressSelect) {
+            if (addressSelect.selectedIndex <= 0) {
+                alert('يرجى اختيار العنوان');
+                isValid = false;
+                console.log('خطأ في العنوان');
+            }
+        }
+        
+        // التحقق من اختيار النوع
+        const gender = document.querySelector('input[name="gender"]:checked');
+        if (!gender) {
+            alert('يرجى اختيار الجنس');
+            isValid = false;
+            console.log('خطأ في اختيار الجنس');
+        }
+        
+        console.log('نتيجة التحقق من المريض:', isValid);
+        return isValid;
+    }
+
+    // صفحه تسجيل الاسطف
+    function validateStaffForm() {
+        let isValid = true;
+        console.log('بدء التحقق من بيانات الموظف');
+
+        // التحقق من الاسم
+        const nameInput = document.querySelector('#staff-page input[name="userName"]');
+        const nameError = document.querySelector('#staff-page #nameError');
+        if (nameInput && nameError) {
+            if (nameInput.value.length < 3 || nameInput.value.length > 40) {
+                nameError.style.display = 'block';
+                isValid = false;
+            } else {
+                nameError.style.display = 'none';
+            }
+        }
+        
+        // التحقق من رقم الهاتف
+        const phoneInput = document.querySelector('#staff-page input[name="phone"]');
+        const phoneError = document.querySelector('#staff-page #emailError');
+        if (phoneInput && phoneError) {
+            if (phoneInput.value.length !== 11 || isNaN(phoneInput.value)) {
+                phoneError.textContent = 'يرجى إدخال رقم هاتف صحيح (11 رقم)';
+                phoneError.style.display = 'block';
+                isValid = false;
+            } else {
+                phoneError.style.display = 'none';
+            }
+        }
+        
+        // التحقق من البريد الإلكتروني
+        const emailInput = document.querySelector('#staff-page input[name="userEmail"]');
+        const emailErrors = document.querySelectorAll('#staff-page #emailError');
+        const emailError = emailErrors[1];
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (emailInput && emailError) {
+            if (!emailPattern.test(emailInput.value)) {
+                emailError.style.display = 'block';
+                isValid = false;
+            } else {
+                emailError.style.display = 'none';
+            }
+        }
+        
+        // التحقق من العمر
+        const ageInput = document.querySelector('#staff-page input[name="idage"]');
+        const ageError = document.querySelector('#staff-page #idError');
+        if (ageInput && ageError) {
+            if (ageInput.value < 18 || ageInput.value > 65 || !ageInput.value) {
+                ageError.textContent = 'يجب أن يكون العمر بين 18 و 65 سنة';
+                ageError.style.display = 'block';
+                isValid = false;
+            } else {
+                ageError.style.display = 'none';
+            }
+        }
+        
+        // التحقق من النوع
+        const genderRadios = document.querySelectorAll('#staff-page input[name="gender"]');
+        let genderSelected = false;
+        if (genderRadios) {
+            genderRadios.forEach(radio => {
+                if (radio.checked) genderSelected = true;
+            });
+            if (!genderSelected) {
+                alert('يرجى اختيار النوع');
+                isValid = false;
+            }
+        }
+
+        // التحقق من معرف المستشفى
+        const hospitalSelect = document.querySelector('#staff-page select[name="Hospital-id"]');
+        const hospitalError = document.querySelector('#staff-page #statusError');
+        if (hospitalSelect && hospitalError) {
+            if (hospitalSelect.selectedIndex <= 0) {
+                hospitalError.textContent = 'يرجى اختيار رقم المستشفى';
+                hospitalError.style.display = 'block';
+                isValid = false;
+            } else {
+                hospitalError.style.display = 'none';
+            }
+        }
+        
+        // التحقق من المسمى الوظيفي
+        const jobSelect = document.querySelector('#staff-page select[name="Hospital-job"]');
+        const jobErrors = document.querySelectorAll('#staff-page #statusError');
+        const jobError = jobErrors[1];
+        if (jobSelect && jobError) {
+            if (!jobSelect.value || jobSelect.value.includes("disabled")) {
+                jobError.style.display = 'block';
+                isValid = false;
+            } else {
+                jobError.style.display = 'none';
+            }
+        }
+        
+        return isValid;
+    }
+
+    // وظائف مساعدة للتحقق من صحة البيانات
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+
+    // دالة التحقق من رقم الهاتف المحسنة
+    function validatePhone(phone) {
+        // إزالة أي مسافات أو شرطات
+        const cleanedPhone = phone.replace(/\D/g, '');
+        console.log('📱 رقم الهاتف بعد التنظيف:', cleanedPhone);
+        
+        // التحقق من أن الرقم يتكون من 11 رقمًا ويبدأ بـ 01
+        const re = /^01[0125]\d{8}$/;
+        const isValid = re.test(cleanedPhone);
+        
+        console.log('✅ نتيجة التحقق من الهاتف:', isValid, 'للرقم:', cleanedPhone);
+        return isValid;
+    }
+
+    // إضافة مستمعي الأحداث للتحقق أثناء الكتابة
+    function addValidationListeners() {
+        // التحقق من الاسم أثناء الكتابة
+        const nameInputs = document.querySelectorAll('input[name="userName"]');
+        nameInputs.forEach(input => {
+            input.addEventListener('input', function() {
+                const errorElement = this.parentElement.querySelector('.error-message');
+                if (errorElement) {
+                    if (this.value.length < 3 || this.value.length > 30) {
+                        errorElement.style.display = 'block';
+                    } else {
+                        errorElement.style.display = 'none';
+                    }
+                }
+            });
+        });
+
+        // التحقق من البريد الإلكتروني أثناء الكتابة
+        const emailInputs = document.querySelectorAll('input[type="email"]');
+        emailInputs.forEach(input => {
+            input.addEventListener('input', function() {
+                const errorElement = this.parentElement.querySelector('.error-message');
+                if (errorElement) {
+                    if (!validateEmail(this.value)) {
+                        errorElement.style.display = 'block';
+                    } else {
+                        errorElement.style.display = 'none';
+                    }
+                }
+            });
+        });
+
+        // التحقق من رقم الهاتف أثناء الكتابة
+        const phoneInputs = document.querySelectorAll('input[type="tel"]');
+        phoneInputs.forEach(input => {
+            input.addEventListener('input', function() {
+                if (!validatePhone(this.value)) {
+                    this.style.borderColor = 'red';
+                } else {
+                    this.style.borderColor = '';
+                }
+            });
+        });
+    }
+
+    // تهيئة حقول التاريخ
+    function initDateFields() {
+        const daySelect = document.getElementById('day');
+        const monthSelect = document.getElementById('month');
+        const yearSelect = document.getElementById('year');
+        
+        if (daySelect && monthSelect && yearSelect) {
+            // ملء الأيام (1-31)
+            for (let i = 1; i <= 31; i++) {
+                const option = document.createElement('option');
+                option.value = i;
+                option.textContent = i;
+                daySelect.appendChild(option);
+            }
+            
+            // ملء السنوات (من 1920 إلى 2025)
+            const currentYear = new Date().getFullYear();
+            for (let i = currentYear; i >= 1920; i--) {
+                const option = document.createElement('option');
+                option.value = i;
+                option.textContent = i;
+                yearSelect.appendChild(option);
+            }
+        }
+    }
+
+    // وظائف حفظ البيانات في قاعدة البيانات
+    function saveDoctorData() {
+        const doctorData = {
+            name: document.getElementById('userName').value,
+            age: document.getElementById('id-user').value,
+            email: document.getElementById('userEmail').value,
+            phone: document.getElementById('your-phone').value,
+            experience: document.getElementById('id-experience').value,
+            hospital: document.getElementById('hospital-numberr').value,
+            doctorType: document.getElementById('doctor-status').value,
+            department: document.getElementById('doctordepartment').value,
+            gender: document.querySelector('input[name="gender"]:checked').value
+        };
+        
+        console.log('حفظ بيانات الدكتور:', doctorData);
+        localStorage.setItem('doctorData', JSON.stringify(doctorData));
+    }
+
+    function savePatientData() {
+        const patientData = {
+            name: document.getElementById('userName').value,
+            phone: document.getElementById('your-phone').value,
+            nationalId: document.getElementById('id-national').value,
+            hospital: document.getElementById('hospital-number').value,
+            illness: document.getElementById('patient-illness').value,
+            birthDate: {
+                day: document.getElementById('day').value,
+                month: document.getElementById('month').value,
+                year: document.getElementById('year').value
+            },
+            address: document.getElementById('address').value,
+            gender: document.querySelector('input[name="gender"]:checked').value
+        };
+        
+        console.log('حفظ بيانات المريض:', patientData);
+        localStorage.setItem('patientData', JSON.stringify(patientData));
+    }
+
+    function saveStaffData() {
+        const staffData = {
+            name: document.getElementById('userName').value,
+            phone: document.getElementById('your-phone').value,
+            email: document.getElementById('userEmail').value,
+            age: document.getElementById('id-user').value,
+            gender: document.querySelector('input[name="gender"]:checked').value,
+            hospital: document.getElementById('hospital-numberr').value,
+            job: document.getElementById('hospital-job').value
+        };
+        
+        console.log('حفظ بيانات الموظف:', staffData);
+        localStorage.setItem('staffData', JSON.stringify(staffData));
+    }
+
+    // إضافة وظائف للقائمة المتحركة في صفحات عبدو
+    function initMenuToggleForAllPages() {
+        // البحث عن جميع أزرار القائمة في جميع الصفحات
+        const menuButtons = document.querySelectorAll('#menu');
+        const actionMenus = document.querySelectorAll('#action');
+        
+        menuButtons.forEach((menuButton, index) => {
+            if (menuButton && actionMenus[index]) {
+                menuButton.addEventListener('click', function() {
+                    actionMenus[index].classList.toggle('active');
+                });
+            }
+        });
+    }
+}); 
+
+// وظائف القائمة المنسدلة
+// دالة موحدة لإدارة جميع القوائم المنسدلة
+function setupDropdown(menuId, actionsId) {
+    // الحصول على العناصر
+    const menu = document.getElementById(menuId);
+    const actions = document.getElementById(actionsId);
+    
+    // التحقق من وجود العناصر
+    if (!menu || !actions) {
+        console.error(`لم يتم العثور على العناصر: ${menuId}, ${actionsId}`);
+        return;
+    }
+    
+    // إضافة حدث النقر على زر القائمة
+    menu.addEventListener("click", (event) => {
+        event.stopPropagation(); // منع انتشار الحدث
+        toggleMenu(menu, actions);
+    });
+    
+    // إضافة حدث النقر على المستند لإغلاق القائمة
+    document.addEventListener("click", (event) => {
+        if (!menu.contains(event.target) && !actions.contains(event.target)) {
+            closeMenu(menu, actions);
+        }
+    });
+    
+    // إضافة أحداث للروابط داخل القائمة
+    const links = actions.querySelectorAll("a"); 
+    links.forEach(link => {
+        link.addEventListener("click", () => {
+            closeMenu(menu, actions); 
+        });
+    });
+}
+
+// دالة لتبديل حالة القائمة (فتح/إغلاق)
+function toggleMenu(menu, actions) {
+    menu.classList.toggle("is-active");
+    actions.classList.toggle("is-active");
+}
+
+// دالة لإغلاق القائمة
+function closeMenu(menu, actions) {
+    menu.classList.remove("is-active");
+    actions.classList.remove("is-active");
+}
+
+// تهيئة جميع القوائم المنسدلة
+document.addEventListener('DOMContentLoaded', function() {
+    // إعداد القوائم للطبيب، المريض، والموظف
+    setupDropdown("menu", "action");     // المريض
+    
+    // تهيئة AOS مرة واحدة فقط
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    }
+});
+-->
