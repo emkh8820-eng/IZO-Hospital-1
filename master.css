@@ -244,32 +244,32 @@ h5 {
 
 
 .Abdelrahman {
-    background: url("../11.jpg");
+    background: url("./11.jpg");
     background-size: cover;
 }
 
 .Elzoghby {
-    background: url("../12.jpg");
+    background: url("./12.jpg");
     background-size: cover;
 }
 
 .Nada {
-    background: url("../13.jpeg");
+    background: url("./13.jpeg");
     background-size: cover;
 }
 
 .Nour {
-    background: url("../14.jpg");
+    background: url("./14.jpg");
     background-size: cover;
 }
 
 .Marim {
-    background: url("../15.jpeg");
+    background: url("./15.jpeg");
     background-size: cover;
 }
 
 .eid {
-    background: url("../16.jpeg");
+    background: url("./16.jpeg");
     background-attachment: local;
     background-size: cover;
     background-position: center;
@@ -277,12 +277,12 @@ h5 {
 }
 
 .Kirlis{
-    background: url("../17.jpg");
+    background: url("./17.jpg");
     background-size: cover;
 }
 
 .ali{
-    background: url("../18.jpg");
+    background: url("./18.jpg");
     background-size: cover;
 }
 
@@ -844,6 +844,7 @@ footer .content-footer .end {
         width: 100%;
     }
 }
+
 
 
 
