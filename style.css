@@ -994,32 +994,32 @@ h5 {
 
 
 .Abdelrahman {
-    background: url("../photoAbdo/21.jpg");
+    background: url("./21.jpg");
     background-size: cover;
 }
 
 .Elzoghby {
-    background: url("../photoAbdo/22.jpg");
+    background: url("./22.jpg");
     background-size: cover;
 }
 
 .Nada {
-    background: url("../photoAbdo/23.jpg");
+    background: url("./23.jpg");
     background-size: cover;
 }
 
 .Nour {
-    background: url("../photoAbdo/24.jpg");
+    background: url("./24.jpg");
     background-size: cover;
 }
 
 .Marim {
-    background: url("../photoAbdo/25.jpg");
+    background: url("./25.jpg");
     background-size: cover;
 }
 
 .eid {
-    background: url("../photoAbdo/26.jpg");
+    background: url("./26.jpg");
     background-attachment: local;
     background-size: cover;
     background-position: center;
@@ -1027,12 +1027,12 @@ h5 {
 }
 
 .Kirlis{
-    background: url("../photoAbdo/27.jpg");
+    background: url("./27.jpg");
     background-size: cover;
 }
 
 .ali{
-    background: url("../photoAbdo/28.jpg");
+    background: url("./28.jpg");
     background-size: cover;
 }
 
@@ -2098,32 +2098,32 @@ h5 {
 
 
 .Abdelrahman {
-    background: url("../1.jpg");
+    background: url("./1.jpg");
     background-size: cover;
 }
 
 .Elzoghby {
-    background: url("../2.jpg");
+    background: url("./2.jpg");
     background-size: cover;
 }
 
 .Nada {
-    background: url("../3.jpg");
+    background: url("./3.jpg");
     background-size: cover;
 }
 
 .Nour {
-    background: url("../4.jpg");
+    background: url("./4.jpg");
     background-size: cover;
 }
 
 .Marim {
-    background: url("../5.jpg");
+    background: url("./5.jpg");
     background-size: cover;
 }
 
 .eid {
-    background: url("../6.jpg");
+    background: url("./6.jpg");
     background-attachment: local;
     background-size: cover;
     background-position: center;
@@ -2131,12 +2131,12 @@ h5 {
 }
 
 .Kirlis{
-    background: url("../7.jpg");
+    background: url("./7.jpg");
     background-size: cover;
 }
 
 .ali{
-    background: url("../8.jpg");
+    background: url("./8.jpg");
     background-size: cover;
 }
 
@@ -2958,32 +2958,32 @@ h5 {
 
 
 .Abdelrahman {
-    background: url("../11.jpg");
+    background: url("./11.jpg");
     background-size: cover;
 }
 
 .Elzoghby {
-    background: url("../12.jpg");
+    background: url("./12.jpg");
     background-size: cover;
 }
 
 .Nada {
-    background: url("../13.jpeg");
+    background: url("./13.jpeg");
     background-size: cover;
 }
 
 .Nour {
-    background: url("../14.jpg");
+    background: url("./14.jpg");
     background-size: cover;
 }
 
 .Marim {
-    background: url("../15.jpeg");
+    background: url("./15.jpeg");
     background-size: cover;
 }
 
 .eid {
-    background: url("../16.jpeg");
+    background: url("./16.jpeg");
     background-attachment: local;
     background-size: cover;
     background-position: center;
@@ -2991,12 +2991,12 @@ h5 {
 }
 
 .Kirlis{
-    background: url("../17.jpg");
+    background: url("./17.jpg");
     background-size: cover;
 }
 
 .ali{
-    background: url("../18.jpg");
+    background: url("./18.jpg");
     background-size: cover;
 }
 
@@ -3558,6 +3558,7 @@ footer .content-footer .end {
         width: 100%;
     }
 }
+
 
 
 
